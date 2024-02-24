@@ -21,9 +21,9 @@ ALTER TABLE student RENAME COLUMN birthday TO birth_date;
 ALTER TABLE student ALTER COLUMN phone SET DATA TYPE varchar(32);
 
 -- 6. Вставить три любых записи с автогенерацией идентификатора
-INSERT INTO student (first_name, last_name, birth_date, phone) VALUES ('Alexandr', 'Alexandrov', 02.02.2002, '+78005553535');
-INSERT INTO student (first_name, last_name, birth_date, phone) VALUES ('Evgeniy', 'Evgenyev', 01.01.2001, '+78002222525');
-INSERT INTO student (first_name, last_name, birth_date, phone) VALUES ('Danil', 'Danilov', 31.12.2000, '+79222157389');
+INSERT INTO student (first_name, last_name, birth_date, phone) VALUES ('Alexandr', 'Alexandrov', '2002-02-02', '+78005553535');
+INSERT INTO student (first_name, last_name, birth_date, phone) VALUES ('Evgeniy', 'Evgenyev', '2001-01-01', '+78002222525');
+INSERT INTO student (first_name, last_name, birth_date, phone) VALUES ('Danil', 'Danilov', '2000-12-31', '+79222157389');
 
 -- 7. Удалить все данные из таблицы со сбросом идентификатор в исходное состояние
 TRUNCATE TABLE department RESTART IDENTITY;
